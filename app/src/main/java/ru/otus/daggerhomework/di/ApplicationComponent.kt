@@ -11,6 +11,9 @@ interface ApplicationComponent {
 
     @Component.Factory
     interface Factory {
-        fun build(@BindsInstance context: Context): ApplicationComponent
+        fun build(@BindsInstance @ApplicationContext context: Context): ApplicationComponent
     }
+
+    @ApplicationContext
+    fun getContext(): Context
 }

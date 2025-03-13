@@ -13,8 +13,11 @@ import javax.inject.Named
 interface MainActivityComponent {
     @Component.Factory
     interface Factory {
-        fun build(@BindsInstance activity: Activity): MainActivityComponent
+        fun build(@BindsInstance @ActivityContext context: Context): MainActivityComponent
     }
 
     fun event(): MutableStateFlow<Event>
+
+    @ActivityContext
+    fun getContext(): Context
 }

@@ -13,6 +13,7 @@ class ReceiverModule {
     @Provides
     @FragmentScope
     fun viewModel(
+        @ApplicationContext
         context: Context,
         event: MutableStateFlow<Event?>
     ): ReceiverViewModel = ReceiverViewModel(context, event)

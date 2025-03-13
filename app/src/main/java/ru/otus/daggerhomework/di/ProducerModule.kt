@@ -23,6 +23,7 @@ class ProducerModule {
     @FragmentScope
     fun viewModel(
         colorGenerator: ColorGenerator,
+        @ActivityContext
         context: Context,
         event: MutableStateFlow<Event?>
     ): ProducerViewModel = ProducerViewModel(colorGenerator, context, event)

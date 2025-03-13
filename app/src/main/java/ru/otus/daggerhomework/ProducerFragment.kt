@@ -23,7 +23,7 @@ class ProducerFragment : Fragment() {
 
         val component = DaggerProducerFragmentComponent
             .factory()
-            .build(requireActivity().component, requireActivity())
+            .build(requireActivity().component)
         viewModel = component.viewModel()
 
         return inflater.inflate(R.layout.fragment_producer, container, false)

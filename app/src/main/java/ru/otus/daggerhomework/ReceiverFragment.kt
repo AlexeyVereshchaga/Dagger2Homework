@@ -26,9 +26,8 @@ class ReceiverFragment : Fragment() {
         val component = DaggerReceiverFragmentComponent
             .factory()
             .build(
-                requireActivity().component,
-                requireActivity().application
-            )
+                requireActivity().application.component,
+                requireActivity().component)
         viewModel = component.viewModel()
 
         return inflater.inflate(R.layout.fragment_receiver, container, false)

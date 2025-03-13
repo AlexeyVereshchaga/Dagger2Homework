@@ -15,8 +15,7 @@ interface ProducerFragmentComponent {
     @Component.Factory
     interface Factory {
         fun build(
-            mainActivityComponent: MainActivityComponent,
-            @BindsInstance context: Context
+            mainActivityComponent: MainActivityComponent
         ): ProducerFragmentComponent
     }
 
