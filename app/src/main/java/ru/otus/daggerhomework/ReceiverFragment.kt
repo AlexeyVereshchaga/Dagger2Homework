@@ -27,7 +27,8 @@ class ReceiverFragment : Fragment() {
             .factory()
             .build(
                 requireActivity().application.component,
-                requireActivity().component)
+                requireActivity().component
+            )
         viewModel = component.viewModel()
 
         return inflater.inflate(R.layout.fragment_receiver, container, false)

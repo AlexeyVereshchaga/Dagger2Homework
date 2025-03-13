@@ -5,7 +5,7 @@ import android.content.Context
 import android.widget.Toast
 import kotlinx.coroutines.flow.MutableStateFlow
 
-class ProducerViewModel (
+class ProducerViewModel(
     private val colorGenerator: ColorGenerator,
     private val context: Context,
     private val event: MutableStateFlow<Event?>

@@ -13,7 +13,7 @@ interface ReceiverFragmentComponent {
     @Component.Factory
     interface Factory {
         fun build(
-            applicationComponent:ApplicationComponent,
+            applicationComponent: ApplicationComponent,
             mainActivityComponent: MainActivityComponent
         ): ReceiverFragmentComponent
     }
